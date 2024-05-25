@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TextField?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controller.ResultRecordingController">
+    <TableView fx:id="resultTable" prefWidth="600" prefHeight="400">
+        <!-- Table columns for result details -->
+        <columns>
+            <TableColumn text="Event" fx:id="eventColumn" />
+            <TableColumn text="Athlete" fx:id="athleteColumn" />
+            <TableColumn text="Score" fx:id="scoreColumn" />
+            <TableColumn text="Medal" fx:id="medalColumn" />
+        </columns>
+    </TableView>
+    <ComboBox fx:id="eventComboBox" promptText="Select Event"/>
+    <ComboBox fx:id="athleteComboBox" promptText="Select Athlete"/>
+    <TextField fx:id="scoreField" promptText="Enter Score"/>
+    <ComboBox fx:id="medalComboBox" promptText="Select Medal"/>
+    <Button text="Record Result" onAction="#handleRecordResult"/>
+    <Button text="Edit Result" onAction="#handleEditResult"/>
+    <Button text="Delete Result" onAction="#handleDeleteResult"/>
+</AnchorPane>

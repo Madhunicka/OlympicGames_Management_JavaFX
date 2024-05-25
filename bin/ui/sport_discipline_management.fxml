@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controller.SportDisciplineController">
+    <TableView fx:id="disciplineTable" prefWidth="600" prefHeight="400">
+        <!-- Table columns for sport discipline details -->
+        <columns>
+            <TableColumn text="Name" fx:id="nameColumn" />
+        </columns>
+    </TableView>
+    <Button text="Add Discipline" onAction="#handleAddDiscipline"/>
+    <Button text="Edit Discipline" onAction="#handleEditDiscipline"/>
+    <Button text="Delete Discipline" onAction="#handleDeleteDiscipline"/>
+    <TextField fx:id="nameField" promptText="Enter Discipline Name"/>
+</AnchorPane>
+
+
